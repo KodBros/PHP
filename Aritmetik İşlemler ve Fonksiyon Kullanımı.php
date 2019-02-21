@@ -6,7 +6,7 @@
     $a=20;
     $b=15;
     $toplam=$a+$b;
-    echo "a+b = "."$toplam </br>"; 
+    echo "a+b = "."$toplam </br></br>"; 
 
     function topla(){
         global $a;
@@ -15,7 +15,11 @@
         $x=$a-$b;
     }
     topla();
-    echo "a = ".$a."</br>"."b = ".$b."</br>"."x = ".$x;
+    echo "a = ".$a."</br>"."b = ".$b."</br></br>"."x = ".$x."</br></br>";
+
+    $t=10;
+    $t++;
+    echo "t = $t";
 ?>
 
 </body>

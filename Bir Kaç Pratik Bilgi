@@ -3,6 +3,14 @@
 <body>
 
 <?php
+    $ad="Yusuf";
+    $soyad="KORKMAZ";
+    echo "Ad : $ad Soyad : $soyad"."</br>";
+    echo 'Ad : $ad Soyad : $soyad'.'</br>'; //Tek tırnak ve çift tırnak arasında yazılanların farkı.
+    
+    echo sqrt(25);// Yazılan sayının karekökünü alır.
+    echo pow(5, 2)// Soldaki sayı , üzeri sağdaki sayı yani üs alma işlemini gerçekleştiren metod.
+    
     $a=20;
     $b=15;
     $toplam=$a+$b;

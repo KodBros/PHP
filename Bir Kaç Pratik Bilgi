@@ -7,15 +7,22 @@
     $soyad="KORKMAZ";
     echo "Ad : $ad Soyad : $soyad"."</br>";
     echo 'Ad : $ad Soyad : $soyad'.'</br>'; //Tek tırnak ve çift tırnak arasında yazılanların farkı.
-    
+
     echo sqrt(25)."</br>";// Yazılan sayının karekökünü alır.
-    echo pow(5, 2)."</br>"// Soldaki sayı , üzeri sağdaki sayı yani üs alma işlemini gerçekleştiren metod.
+    echo pow(5, 2)."</br>";// Soldaki sayı , üzeri sağdaki sayı yani üs alma işlemini gerçekleştiren metod.
     echo ucwords("hello world")."</br>";//Kelimelerin Baş Harflerini Büyük Yazar.
-    
+    echo ucfirst("hello world")."</br>";//İlk kelimenin baş harfini büyük yazar.
+    echo strlen(utf8_decode($ad))."</br>";// Kelime/cümle uzunluğunu yazar. //utf8_decode türkçe karakterleri doğru sayması için gerekli.
+
+    $metin = "Bilgisayar Mühendisliği Bölümü";
+    echo strstr($metin,"Mühendisliği")."</br>";//Virgülden sonraki karakter dizisinden başlar kelime/cümle sonuna kadar ekrana yazar.
+    echo str_replace("Bilgisayar","Yazılım",$metin)."</br>";//Seçili cümledeki bir kelimeyi değiştirme metodu.
+    echo substr($metin,10,15)."</br>";//Seçili karakterler arasındaki karakterleri ekrana yazar.
+
     $a=20;
     $b=15;
     $toplam=$a+$b;
-    echo "a+b = "."$toplam </br></br>"; 
+    echo "a+b = "."$toplam </br></br>";
 
     function topla(){
         global $a;
@@ -30,6 +37,5 @@
     $t++;
     echo "t = $t";
 ?>
-
 </body>
 </html>

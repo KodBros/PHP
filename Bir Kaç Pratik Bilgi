@@ -8,8 +8,9 @@
     echo "Ad : $ad Soyad : $soyad"."</br>";
     echo 'Ad : $ad Soyad : $soyad'.'</br>'; //Tek tırnak ve çift tırnak arasında yazılanların farkı.
     
-    echo sqrt(25);// Yazılan sayının karekökünü alır.
-    echo pow(5, 2)// Soldaki sayı , üzeri sağdaki sayı yani üs alma işlemini gerçekleştiren metod.
+    echo sqrt(25)."</br>";// Yazılan sayının karekökünü alır.
+    echo pow(5, 2)."</br>"// Soldaki sayı , üzeri sağdaki sayı yani üs alma işlemini gerçekleştiren metod.
+    echo ucwords("hello world")."</br>";//Kelimelerin Baş Harflerini Büyük Yazar.
     
     $a=20;
     $b=15;
